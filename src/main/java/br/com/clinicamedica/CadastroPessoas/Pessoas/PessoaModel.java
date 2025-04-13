@@ -1,5 +1,6 @@
-package br.com.clinicamedica.CadastroPessoas;
+package br.com.clinicamedica.CadastroPessoas.Pessoas;
 
+import br.com.clinicamedica.CadastroPessoas.Tarefas.TarefasModel;
 import jakarta.persistence.*;
 
 
@@ -21,6 +22,12 @@ public class PessoaModel {
     private String nome;
     private String email;
     private int idade;
+
+    //@anyToMany = Uma pessoa tem uma unica tarefa
+    @ManyToOne
+    @JoinColumn(name = "tarefa_id") // foreign key - chave estrangeira
+    private TarefasModel tarefas;
+
 
 
     public PessoaModel() {
@@ -54,4 +61,6 @@ public class PessoaModel {
     public void setIdade(int idade){
         this.idade = idade;
     }
+
+
 }

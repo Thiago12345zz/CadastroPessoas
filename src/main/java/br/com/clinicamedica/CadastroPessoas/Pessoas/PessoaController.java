@@ -1,4 +1,4 @@
-package br.com.clinicamedica.CadastroPessoas;
+package br.com.clinicamedica.CadastroPessoas.Pessoas;
 
 
 //Falar para o spring que isto é uma anotation, para isto utilizamos @

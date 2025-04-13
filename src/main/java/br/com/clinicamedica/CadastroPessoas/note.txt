@@ -1,0 +1,3 @@
+Arquitetura:
+    --> Neste projeto estamos uttilizando a arquitetura de dados layered architecture (Arquitetura de camadas).
+
