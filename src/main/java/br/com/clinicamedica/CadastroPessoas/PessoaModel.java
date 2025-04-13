@@ -17,10 +17,10 @@ public class PessoaModel {
 
     @Id // O atributo logo a baixo será um id.
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Passar uma estategia de como gerar o id
-    long id;
-    String nome;
-    String email;
-    int idade;
+    private long id;
+    private String nome;
+    private String email;
+    private int idade;
 
 
     public PessoaModel() {
